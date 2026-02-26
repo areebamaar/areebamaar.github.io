@@ -6,9 +6,9 @@
 <style>
 body{
   font-family: Arial, sans-serif;
-  background:#0f172a;
-  color:white;
   margin:0;
+  background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
+  color:white;
 }
 
 .container{
@@ -17,14 +17,28 @@ body{
   padding:40px 20px;
 }
 
-h1{margin-bottom:5px;}
-.subtitle{color:#94a3b8;}
+h1{
+  margin-bottom:5px;
+  font-size:34px;
+}
+
+.subtitle{
+  color:#94a3b8;
+  margin-bottom:25px;
+}
 
 .card{
-  background:#1e293b;
-  padding:20px;
-  border-radius:12px;
+  background:#111827;
+  padding:22px;
+  border-radius:14px;
   margin-top:20px;
+  border:1px solid #1f2937;
+  transition:0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0px 8px 25px rgba(56,189,248,0.25);
 }
 
 a{
@@ -33,12 +47,29 @@ a{
   font-weight:bold;
 }
 
+.button{
+  display:inline-block;
+  background:#38bdf8;
+  color:black;
+  padding:10px 16px;
+  border-radius:8px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.button:hover{
+  background:#0ea5e9;
+  transform:scale(1.05);
+}
+
 .tag{
   background:#020617;
-  padding:5px 10px;
+  padding:6px 12px;
   border-radius:6px;
-  margin-right:6px;
+  margin:5px 6px 0 0;
   font-size:12px;
+  border:1px solid #1f2937;
+  display:inline-block;
 }
 </style>
 </head>
@@ -47,8 +78,8 @@ a{
 
 <div class="container">
 
-<h1>K R Mohammed Areeb Amaar</h1>
-<p class="subtitle">ServiceNow Developer • Java • Spring Boot Backend Developer </p>
+<h1>🚀 K R Mohammed Areeb Amaar</h1>
+<p class="subtitle">ServiceNow Developer • Java • Spring Boot Backend Developer</p>
 
 <div class="card">
 <h2>🎓 Education</h2>
@@ -58,15 +89,15 @@ a{
 
 <div class="card">
 <h2>📄 Resume</h2>
-<p>
-<a href="https://areebamaar.github.io/resume.pdf" target="_blank">View My Resume</a>
-</p>
+<a class="button" href="https://areebamaar.github.io/resume.pdf" download>
+Download Resume
+</a>
 </div>
 
 <div class="card">
 <h2>💻 Skills</h2>
 <span class="tag">Java</span>
-<span class="tag">ServiceNow ITSM</span>  
+<span class="tag">ServiceNow ITSM</span>
 <span class="tag">Spring Boot</span>
 <span class="tag">MongoDB</span>
 <span class="tag">JWT</span>
@@ -84,9 +115,9 @@ a{
 <br><br>
 
 <h3>Document Request Tracking - HRMS</h3>
-<p>Document Request Tracker developed using ServiceNow.</p>  
+<p>Document Request Tracker developed using ServiceNow.</p>
 
-<br><br>  
+<br><br>
 
 <h3>MediTime</h3>
 <p>Medical reminder backend application built using Java & Spring Boot.</p>
